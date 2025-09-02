@@ -3,12 +3,12 @@
   "displayName": "HTML Shorthand Autocomplete",
   "description": "Intelligent HTML/JSX tag autocompletion from shorthand like .class1.class2, #id, tag#id, tag.class1.class2.",
   "version": "0.0.1",
-  "publisher": "your-publisher-id",
+  "publisher": "RezaBakhshiNia",
   "license": "MIT",
   "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourname/html-shorthand-autocomplete"
+    "url": "https://github.com/RezaBakhshiNia/html-shorthand-autocomplete"
   },
   "engines": {
     "vscode": "^1.84.0"
