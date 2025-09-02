@@ -1,0 +1,49 @@
+{
+  "name": "html-shorthand-autocomplete",
+  "displayName": "HTML Shorthand Autocomplete",
+  "description": "Intelligent HTML/JSX tag autocompletion from shorthand like .class1.class2, #id, tag#id, tag.class1.class2.",
+  "version": "0.0.1",
+  "publisher": "your-publisher-id",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourname/html-shorthand-autocomplete"
+  },
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:html",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptreact"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "HTML Shorthand Autocomplete",
+      "properties": {
+        "htmlShorthandAutocomplete.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable the HTML Shorthand Autocomplete provider."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.84.0",
+    "typescript": "^5.3.3",
+    "vsce": "^2.15.0",
+    "@types/node": "^20.11.0"
+  }
+}
